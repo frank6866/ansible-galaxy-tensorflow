@@ -1,2 +1,5 @@
 ---
 # tasks file for .
+
+- name: "test for travis'
+  shell: echo hello

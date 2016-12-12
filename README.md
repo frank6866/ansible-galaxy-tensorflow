@@ -1,7 +1,7 @@
-Role Name
-=========
+tensorflow
+==========
 
-A brief description of the role goes here.
+This role install tensorflow on Linux(CentOS and Ubuntu are supported).
 
 Requirements
 ------------
@@ -11,12 +11,20 @@ Any pre-requisites that may not be covered by Ansible itself or the role should 
 Role Variables
 --------------
 
-A description of the settable variables for this role should go here, including any variables that are in defaults/main.yml, vars/main.yml, and any variables that can/should be set via parameters to the role. Any variables that are read from other roles and/or the global scope (ie. hostvars, group vars, etc.) should be mentioned here as well.
+There are only two variables for repository mirror, as the default values listed below:
+
+    # The venv path to install tensorflow
+    tensorflow_venv_path: ~/venvs/tensorflow
+    
+    # The binary url of tensorflow
+    TF_BINARY_URL_Linux_CPU_2: https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.12.0rc0-cp27-none-linux_x86_64.whl
+
+Usually you don't need to change them.
 
 Dependencies
 ------------
 
-A list of other roles hosted on Galaxy should go here, plus any details in regards to parameters that may need to be set for other roles, or variables that are used from other roles.
+This role depend on [frank6866.pip](https://galaxy.ansible.com/frank6866/pip/)
 
 Example Playbook
 ----------------
@@ -25,14 +33,11 @@ Including an example of how to use your role (for instance, with variables passe
 
     - hosts: servers
       roles:
-         - { role: username.rolename, x: 42 }
+         - { role: frank6866.pip }
+         - { role: frank6866.tensorflow }
 
 License
 -------
 
-BSD
+MIT
 
-Author Information
-------------------
-
-An optional section for the role authors to include contact information, or a website (HTML is not allowed).

@@ -1,5 +1,10 @@
 ---
-# tasks file for .
+# tasks file for tensorflow forward to specificed os
 
-- name: "test for travis"
-  shell: echo hello
+- name: install virtualenv
+  pip: name=virtualenv state=present
+  become: true
+
+- name: install tensorflow
+  pip: name={{ TF_BINARY_URL_Linux_CPU_2 }} virtualenv={{ tensorflow_venv_path }}
+

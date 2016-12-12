@@ -13,7 +13,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
         config.vm.provision "ansible" do |ansible|
             ansible.limit = "all"
-            ansible.verbose = "v" # "vvvv"
+            ansible.verbose = "v" # "v" or "vvvv"
             ansible.playbook = "tests/test_vagrant.yml"
         end
     end

@@ -1,2 +1,39 @@
 ---
-# defaults file for .
+# defaults file for tensorflow
+
+tensorflow_venv_path: ~/venvs/tensorflow
+
+
+# Ubuntu/Linux 64-bit, CPU only, Python 2.7
+TF_BINARY_URL_Linux_CPU_2: https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.12.0rc0-cp27-none-linux_x86_64.whl
+
+# Ubuntu/Linux 64-bit, GPU enabled, Python 2.7
+# Requires CUDA toolkit 8.0 and CuDNN v5. For other versions, see "Installing from sources" below.
+TF_BINARY_URL_Linux_GPU_2: https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-0.12.0rc0-cp27-none-linux_x86_64.whl
+
+# Mac OS X, CPU only, Python 2.7:
+TF_BINARY_URL_Mac_CPU_2: https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-0.12.0rc0-py2-none-any.whl
+
+# Mac OS X, GPU enabled, Python 2.7:
+TF_BINARY_URL_Mac_GPU_2: https://storage.googleapis.com/tensorflow/mac/gpu/tensorflow_gpu-0.12.0rc0-py2-none-any.whl
+
+# Ubuntu/Linux 64-bit, CPU only, Python 3.4
+TF_BINARY_URL_Linux_CPU_3: https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.12.0rc0-cp34-cp34m-linux_x86_64.whl
+
+# Ubuntu/Linux 64-bit, GPU enabled, Python 3.4
+# Requires CUDA toolkit 8.0 and CuDNN v5. For other versions, see "Installing from sources" below.
+TF_BINARY_URL_Linux_GPU_34: https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-0.12.0rc0-cp34-cp34m-linux_x86_64.whl
+
+# Ubuntu/Linux 64-bit, CPU only, Python 3.5
+TF_BINARY_URL_Linux_CPU_35: https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.12.0rc0-cp35-cp35m-linux_x86_64.whl
+
+# Ubuntu/Linux 64-bit, GPU enabled, Python 3.5
+# Requires CUDA toolkit 8.0 and CuDNN v5. For other versions, see "Installing from sources" below.
+TF_BINARY_URL_Linux_GPU_3: https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-0.12.0rc0-cp35-cp35m-linux_x86_64.whl
+
+# Mac OS X, CPU only, Python 3.4 or 3.5:
+TF_BINARY_URL_Mac_CPU_3: https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-0.12.0rc0-py3-none-any.whl
+
+# Mac OS X, GPU enabled, Python 3.4 or 3.5:
+TF_BINARY_URL_Mac_GPU_3: https://storage.googleapis.com/tensorflow/mac/gpu/tensorflow_gpu-0.12.0rc0-py3-none-any.whl
+

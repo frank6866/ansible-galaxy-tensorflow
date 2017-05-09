@@ -1,5 +1,0 @@
----
-- hosts: all
-  roles:
-    - frank6866.pip
-    - ../..
